@@ -5,7 +5,6 @@ services:
     image: nginx:alpine
     ports:
       - "8001:80"
-      - "443:443"
     volumes:
       - ./www/:/var/www/html/:rw
       - ./conf/nginx/conf.d:/etc/nginx/conf.d/:ro
@@ -16,16 +15,16 @@ services:
 
   mysql:
     container_name: mysql
-    image: mysql:latest
+    image: mysql:5.7
     ports:
       - "3366:3306"
     volumes:
-#      - ./conf/mysql/my.cnf:/etc/mysql/my.cnf:ro
+      - ./conf/mysql/my.cnf:/etc/mysql/my.cnf:ro
       - ./mysql/:/var/lib/mysql/:rw
       - ./log/mysql/:/var/log/mysql/:rw
     environment:
-      MYSQL_ROOT_PASSWORD: "1688"
-      MYSQL_DATABASE: "label"
+      MYSQL_ROOT_PASSWORD: "docker"
+      MYSQL_DATABASE: "docker_label"
 
   redis:
     container_name: redis
