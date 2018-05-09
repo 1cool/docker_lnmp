@@ -34,7 +34,7 @@ mysql:
          MYSQL_DATABASE: "你的应用的MySQL库名"
          其余配置请自行查看docker文档
 ````
-- 其中 ports 第一个参数表示你本地的映射端口，第二个表示docker容器了服务运行的端口。以nginx为例，以下参数说明。
+- 其中 ports 第一个参数表示你本地的映射端口，第二个表示docker容器里服务运行的端口。以nginx为例，以下参数说明。
 你访问 http://localhost:8000 的时候会访问docker容器里80端口部署的应用
 ````
  ports:
