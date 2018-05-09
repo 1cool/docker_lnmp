@@ -47,7 +47,7 @@ mysql:
 site1.conf,site2.conf,site3.conf，site4.conf ……
 - 和正常的nginx 部署项目一样配置一样，自行配置即可
 
-###常用命令
+### 常用命令
 1. 启动docker容器
 ````
 sudo docker-compose up
