@@ -3,7 +3,7 @@
 ## 部署项目的正确姿势
 1. 先docker-compose.yml 配置正确的版本和端口MySQL root账户密码应用数据库名
 2. conf/nginx/conf.d/ 下部署站点
-3. sudo docker-compose up
+3. sudo docker-compose up -d
 ---
 ### Use
 ````
@@ -59,8 +59,8 @@ sudo docker-compose ps
 3. 关闭docker某个服务/所有服务
 ````
 sudo docker-compose stop nginx
-sudo docker-compose stop all
-sudo docker-compose restart all 
+sudo docker-compose stop 
+sudo docker-compose restart 
 ````
 4. 进入某个容器内
 ````
