@@ -64,7 +64,7 @@ sudo docker-compose restart all
 ````
 4. 进入某个容器内
 ````
-sudo docker exec -it bash php //进入php容器 
+sudo docker exec -it php bash //进入php容器 
 
 说明 php 是你的docker-compose.yml 配置里 php模块 container_name 定义的容器名称
 ````
