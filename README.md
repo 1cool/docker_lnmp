@@ -4,9 +4,7 @@
 1. 先docker-compose.yml 配置正确的版本和端口MySQL root账户密码应用数据库名
 2. conf/nginx/conf.d/ 下部署站点
 3. sudo docker-compose up
-
 ---
-
 ### Use
 ````
 git clone https://github.com/1cool/docker_lnmp.git
@@ -20,7 +18,7 @@ sudo docker-compose up
 ok 如果你的端口没有占用的话服务应该就在在运行了
 可以通过命令 sudo docker-compose ps 查看运行情况
 ````
-
+---
 ### 说明
 1. 如果需要修改php,mysql,nginx版本。以MySQL为例（修改其余的同MySQL一样）过程如下：
 - 打开 docker-compose.yml
@@ -48,7 +46,7 @@ mysql:
 - 如果你有多个站点，就配置多个conf，如：
 site1.conf,site2.conf,site3.conf，site4.conf ……
 - 和正常的nginx 部署项目一样配置一样，自行配置即可
-
+---
 ### 常用命令
 1. 启动docker容器
 ````
