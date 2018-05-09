@@ -5,6 +5,8 @@
 2. conf/nginx/conf.d/ 下部署站点
 3. sudo docker-compose up
 
+---
+
 ### Use
 ````
 git clone https://github.com/1cool/docker_lnmp.git
