@@ -1,11 +1,11 @@
 # docker_lnmp
 
-##部署项目的正确姿势
+## 部署项目的正确姿势
 1. 先docker-compose.yml 配置正确的版本和端口MySQL root账户密码应用数据库名
 2. conf/nginx/conf.d/ 下部署站点
 3. sudo docker-compose up
 
-###Use
+### Use
 ````
 git clone https://github.com/1cool/docker_lnmp.git
 ````
@@ -19,7 +19,7 @@ ok 如果你的端口没有占用的话服务应该就在在运行了
 可以通过命令 sudo docker-compose ps 查看运行情况
 ````
 
-###说明
+### 说明
 1. 如果需要修改php,mysql,nginx版本。以MySQL为例（修改其余的同MySQL一样）过程如下：
 - 打开 docker-compose.yml
 - 找到MySQL模块，修改  image: mysql:5.7 后边的数字就行
@@ -41,7 +41,7 @@ mysql:
       - "8000:80" 
 ````
 
-###nginx部署应用
+### nginx部署应用
 - 打开1cool-dnmp/conf/nginx/conf.d/ 文件夹
 - 如果你有多个站点，就配置多个conf，如：
 site1.conf,site2.conf,site3.conf，site4.conf ……
